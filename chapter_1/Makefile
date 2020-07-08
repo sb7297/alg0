@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bec31c8b10c37467349faa057cfd03f966b53d34b07bafb0da375ad196862a82
-size 129
+all : 1.pdf 2.pdf 3.pdf
+
+3.pdf: 3.md
+	pandoc 3.md -o 3.pdf
+
+2.pdf: 2.md
+	pandoc 2.md -o 2.pdf
+
+1.pdf: 1.md
+	pandoc 1.md -o 1.pdf
