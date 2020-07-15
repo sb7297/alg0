@@ -1,4 +1,7 @@
-all : 1.pdf 2.pdf 3.pdf 4.pdf
+all : 1.pdf 2.pdf 3.pdf 4.pdf 5.pdf
+
+5.pdf: 5.md
+	pandoc 5.md -o 5.pdf
 
 4.pdf: 4.md
 	pandoc 4.md -o 4.pdf
